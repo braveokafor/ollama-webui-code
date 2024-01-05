@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.0](https://github.com/braveokafor/ollama-webui-code/compare/v1.0.0...v1.1.0) (2024-01-05)
+
+
+### Features
+
+* test release workflow ([dee5f27](https://github.com/braveokafor/ollama-webui-code/commit/dee5f27d4ed31d0bc9f83ee335bff166028edcbb))
+* test release workflow 2 ([1d12da4](https://github.com/braveokafor/ollama-webui-code/commit/1d12da4d6850d49f49d72e40a81b12bed914e459))
+
+
+### Bug Fixes
+
+* test release workflow ([7fff839](https://github.com/braveokafor/ollama-webui-code/commit/7fff839f17a48297453dfa573f4184ecfb53f4a6))
+* test release workflow 2 ([b650d6c](https://github.com/braveokafor/ollama-webui-code/commit/b650d6cc1d4ac832fece1dd6aeeb37d994232cca))
+
 ## 1.0.0 (2024-01-05)
 
 

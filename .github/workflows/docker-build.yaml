@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-tags: true
       # Required for multi architecture build
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3

@@ -3,6 +3,7 @@ name: Create and publish a Docker image
 
 # Configures this workflow to run every time a change is pushed to the branch called `release`.
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -27,9 +28,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          fetch-tags: true
       # Required for multi architecture build
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -52,10 +50,11 @@ jobs:
           # This configuration dynamically generates tags based on the branch, tag, commit, and custom suffix for lite version.
           tags: |
             type=ref,event=branch
+            type=ref,event=tag
+            type=sha,prefix=git-
             type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
-            type=sha
+          flavor: |
+            latest=${{ github.ref == 'refs/heads/main' }}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
@@ -65,5 +64,3 @@ jobs:
           platforms: linux/amd64,linux/arm64
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max

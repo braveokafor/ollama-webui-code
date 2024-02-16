@@ -52,6 +52,8 @@ jobs:
             type=ref,event=tag
             type=sha,prefix=git-
             type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{major}}
           flavor: |
             latest=${{ github.ref == 'refs/heads/main' }}
 

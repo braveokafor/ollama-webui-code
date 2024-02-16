@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/braveokafor/ollama-webui-code/compare/v1.1.0...v1.2.0) (2024-02-16)
+
+
+### Features
+
+* add version tags to docker images ([94ecd51](https://github.com/braveokafor/ollama-webui-code/commit/94ecd51b1167e36afffcd68425b2226640077811))
+
 ## [1.1.0](https://github.com/braveokafor/ollama-webui-code/compare/v1.0.0...v1.1.0) (2024-02-16)
 
 

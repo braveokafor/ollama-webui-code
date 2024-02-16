@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/braveokafor/ollama-webui-code/compare/v1.0.0...v1.1.0) (2024-02-16)
+
+
+### Features
+
+* added github action to automate the creation of new tags/ releases ([ad1ea40](https://github.com/braveokafor/ollama-webui-code/commit/ad1ea40a87fe5a5d0eb15d7a3876a5dbe03e877a))
+
 ## 1.0.0 (2024-02-16)
 
 

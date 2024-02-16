@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/braveokafor/ollama-webui-code/compare/v1.3.0...v1.4.0) (2024-02-16)
+
+
+### Features
+
+* trigger release ([66199aa](https://github.com/braveokafor/ollama-webui-code/commit/66199aaf65d4eb0eafe43bce650c8b82abf10135))
+
 ## [1.3.0](https://github.com/braveokafor/ollama-webui-code/compare/v1.2.0...v1.3.0) (2024-02-16)
 
 
